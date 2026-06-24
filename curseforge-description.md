@@ -6,7 +6,7 @@ Use this as the content order for the CurseForge rich editor. Upload or insert e
 
 Image:
 
-`https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/banner/flashreplay-hero-banner.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/banner/flashreplay-hero-banner.png`
 
 Headline:
 
@@ -23,15 +23,15 @@ Buttons/links:
 - Download on Modrinth: `https://modrinth.com/mod/flash-replay`
 - CurseForge page: `https://www.curseforge.com/minecraft/mc-mods/flash-replay`
 
-## Showcase Video
+## Showcase Preview
 
-Video file:
+Full video showcase:
 
-`https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/video/flashreplay-showcase.mp4`
+`https://lordbanana89.github.io/flash-replay-page/`
 
-Poster image:
+Clickable poster image:
 
-`https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/thumb/showcase-poster.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/thumb/showcase-poster.png`
 
 Caption:
 
@@ -41,9 +41,9 @@ Short showcase: save the moment, direct the replay camera, export the clip.
 
 Insert these three GIFs directly under the introduction.
 
-- Save Last: `https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/gif/save-last.gif`
-- Director Camera: `https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/gif/director-camera.gif`
-- Export: `https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/gif/export-h264.gif`
+- Save Last: `https://lordbanana89.github.io/flash-replay-page/assets/gif/save-last.gif`
+- Director Camera: `https://lordbanana89.github.io/flash-replay-page/assets/gif/director-camera.gif`
+- Export: `https://lordbanana89.github.io/flash-replay-page/assets/gif/export-h264.gif`
 
 Caption:
 
@@ -53,11 +53,11 @@ Save the moment after it happened. Reframe it with cinematic cameras. Export it 
 
 Strip:
 
-`https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/banner/strip-01-record.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/banner/strip-01-record.png`
 
 Image:
 
-`https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/mockup/capture-hub.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/mockup/capture-hub.png`
 
 Copy:
 
@@ -72,11 +72,11 @@ Flash Replay keeps a rolling replay buffer so your best moments do not disappear
 
 Strip:
 
-`https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/banner/strip-02-camera.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/banner/strip-02-camera.png`
 
 Image:
 
-`https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/mockup/director-timeline.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/mockup/director-timeline.png`
 
 Copy:
 
@@ -91,11 +91,11 @@ Plain screen recordings lock you to the camera you had while playing. Flash Repl
 
 Strip:
 
-`https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/banner/strip-03-actors.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/banner/strip-03-actors.png`
 
 Image:
 
-`https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/mockup/actor-studio.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/mockup/actor-studio.png`
 
 Copy:
 
@@ -110,11 +110,11 @@ Turn replay entities into directable performers for thumbnails, machinima shots,
 
 Strip:
 
-`https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/banner/strip-04-look.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/banner/strip-04-look.png`
 
 Image:
 
-`https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/mockup/visuals-grade.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/mockup/visuals-grade.png`
 
 Copy:
 
@@ -129,11 +129,11 @@ Flash Replay is not only about recording. It is about making the final shot look
 
 Strip:
 
-`https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/banner/strip-05-export.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/banner/strip-05-export.png`
 
 Image:
 
-`https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/mockup/export-dialog.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/mockup/export-dialog.png`
 
 Copy:
 
@@ -149,11 +149,11 @@ Render your replay into the formats creators and editors actually use.
 
 Strip:
 
-`https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/banner/strip-07-friendly.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/banner/strip-07-friendly.png`
 
 Image:
 
-`https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/mockup/studio-workspace.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/mockup/studio-workspace.png`
 
 Copy:
 
