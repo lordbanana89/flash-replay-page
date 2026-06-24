@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Addons permitidos y guia para desarrolladores | Flash Replay Wiki</title>
   <meta name="description" content="Que se puede crear alrededor de Flash Replay, que no esta permitido y como publicar addons compatibles sin romper licencia o estabilidad.">
+  <link rel="icon" href="../../assets/banner/flashreplay-hero-banner.png">
   <link rel="stylesheet" href="../wiki.css">
 </head>
 <body>
@@ -38,7 +39,7 @@
         <section class="doc-section" id="regla-base">
     <div class="section-kicker">01</div>
     <h2>Regla base</h2>
-    <p>Flash Replay es Free download y All Rights Reserved. Puedes crear addons o contenido compatible, pero no puedes redistribuir la mod, sus assets, un jar modificado o codigo fuente.</p><p>Un addon debe ser un proyecto separado que depende de la mod oficial instalada por el usuario.</p>
+    <p>Flash Replay es Free download y All Rights Reserved. Puedes crear addons o contenido compatible, pero no puedes redistribuir la mod, sus assets, un jar modificado o codigo fuente.</p><p>Un addon debe ser un proyecto separado que depende de la mod oficial instalada por el usuario.</p><p>Los addons permitidos son contenido externo, presets, capas de compatibilidad o integraciones que respetan consentimiento de usuario, licencia y limites tecnicos documentados aqui.</p>
     
     
     
@@ -61,7 +62,7 @@
     <h2>Contrato tecnico recomendado</h2>
     
     
-    <ul><li>Trata <code>com.lordbanana.flashreplay.*</code> como interno salvo que una futura pagina API publica diga lo contrario.</li><li>Usa dependencias opcionales y checks de loader para no crashear si Flash Replay no esta instalado.</li><li>No hagas mixins dentro de clases Flash Replay para cambiar core sin acuerdo explicito.</li><li>No escribas directamente en el JSON de config del usuario; ofrece presets o import controlado.</li><li>Declara versiones testadas de Flash Replay, Minecraft y NeoForge.</li></ul>
+    <ul><li>Trata <code>com.lordbanana.flashreplay.*</code> como interno salvo que una futura pagina API publica diga lo contrario.</li><li>Todavia no hay entry points SDK estables publicos: hasta que esten documentados aqui, no los trates como soportados.</li><li>Usa dependencias opcionales y checks de loader para no crashear si Flash Replay no esta instalado.</li><li>No hagas mixins dentro de clases Flash Replay para cambiar core sin acuerdo explicito.</li><li>No escribas directamente en el JSON de config del usuario; ofrece presets o import controlado.</li><li>Declara versiones testadas de Flash Replay, Minecraft y NeoForge.</li></ul>
     
   </section><section class="doc-section" id="naming-y-publicacion">
     <div class="section-kicker">05</div>

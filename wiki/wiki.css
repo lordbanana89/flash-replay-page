@@ -182,11 +182,11 @@ h3 {
 }
 h1 {
   max-width: 780px;
-  font-size: clamp(40px, 6vw, 72px);
+  font-size: 40px;
   letter-spacing: 0;
 }
 h2 {
-  font-size: clamp(25px, 3vw, 36px);
+  font-size: 30px;
   margin-top: 5px;
 }
 p { color: var(--muted); }
@@ -330,7 +330,7 @@ td { color: #d9e0eb; }
   padding: 34px;
 }
 .root h1 {
-  font-size: clamp(50px, 9vw, 104px);
+  font-size: 56px;
 }
 .root-langs {
   display: grid;
@@ -385,7 +385,10 @@ td { color: #d9e0eb; }
     margin-top: 20px;
   }
   h1 {
-    font-size: 40px;
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 26px;
   }
   .card-grid,
   .root-langs {
@@ -393,6 +396,9 @@ td { color: #d9e0eb; }
   }
   .root {
     padding: 30px 14px;
+  }
+  .root h1 {
+    font-size: 40px;
   }
   .root-hero {
     padding: 22px;

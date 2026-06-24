@@ -695,7 +695,8 @@ const pages = {
           title: "Regola base",
           body: [
             "Flash Replay e Free download ed e All Rights Reserved. Puoi creare addon o contenuti compatibili, ma non puoi ridistribuire la mod, i suoi asset, il suo jar modificato o parti del codice sorgente.",
-            "Un addon deve essere un progetto separato che dipende dalla mod ufficiale installata dall'utente."
+            "Un addon deve essere un progetto separato che dipende dalla mod ufficiale installata dall'utente.",
+            "Gli addon concessi sono contenuti, preset, compatibilita o integrazioni esterne che rispettano consenso utente, licenza e confini tecnici documentati."
           ]
         },
         {
@@ -729,6 +730,7 @@ const pages = {
           title: "Contratto tecnico consigliato",
           bullets: [
             "Tratta `com.lordbanana.flashreplay.*` come interno salvo API pubbliche documentate in futuro.",
+            "Non esistono ancora entry point SDK pubblici stabili: finche non vengono documentati qui, non considerarli supportati.",
             "Usa dipendenze opzionali e controlli `ModList`/loader per non crashare se Flash Replay non e installato.",
             "Non mixare dentro classi Flash Replay per cambiare comportamento core senza accordo esplicito.",
             "Non scrivere direttamente nel config JSON dell'utente: se devi fornire preset, documenta i valori o usa import controllato.",
@@ -1355,7 +1357,8 @@ const pages = {
           title: "Base rule",
           body: [
             "Flash Replay is a Free download and is All Rights Reserved. You may create compatible addons or content, but you may not redistribute the mod, its assets, a modified jar or source code.",
-            "An addon must be a separate project that depends on the official mod installed by the user."
+            "An addon must be a separate project that depends on the official mod installed by the user.",
+            "Permitted add-ons are external content, presets, compatibility layers or integrations that respect user consent, license boundaries and the technical limits documented here."
           ]
         },
         {
@@ -1389,6 +1392,7 @@ const pages = {
           title: "Recommended technical contract",
           bullets: [
             "Treat `com.lordbanana.flashreplay.*` as internal unless a future public API page explicitly says otherwise.",
+            "No stable SDK-style entry points are public yet: until they are documented here, do not treat them as supported.",
             "Use optional dependencies and loader checks so your addon does not crash when Flash Replay is absent.",
             "Do not mix into Flash Replay classes to change core behavior without explicit agreement.",
             "Do not write directly into the user's config JSON; provide presets or controlled import instead.",
@@ -2015,7 +2019,8 @@ const pages = {
           title: "Regla base",
           body: [
             "Flash Replay es Free download y All Rights Reserved. Puedes crear addons o contenido compatible, pero no puedes redistribuir la mod, sus assets, un jar modificado o codigo fuente.",
-            "Un addon debe ser un proyecto separado que depende de la mod oficial instalada por el usuario."
+            "Un addon debe ser un proyecto separado que depende de la mod oficial instalada por el usuario.",
+            "Los addons permitidos son contenido externo, presets, capas de compatibilidad o integraciones que respetan consentimiento de usuario, licencia y limites tecnicos documentados aqui."
           ]
         },
         {
@@ -2049,6 +2054,7 @@ const pages = {
           title: "Contrato tecnico recomendado",
           bullets: [
             "Trata `com.lordbanana.flashreplay.*` como interno salvo que una futura pagina API publica diga lo contrario.",
+            "Todavia no hay entry points SDK estables publicos: hasta que esten documentados aqui, no los trates como soportados.",
             "Usa dependencias opcionales y checks de loader para no crashear si Flash Replay no esta instalado.",
             "No hagas mixins dentro de clases Flash Replay para cambiar core sin acuerdo explicito.",
             "No escribas directamente en el JSON de config del usuario; ofrece presets o import controlado.",
@@ -2255,6 +2261,7 @@ function renderPage(lang, slug) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${esc(page.title)} | Flash Replay Wiki</title>
   <meta name="description" content="${esc(page.summary)}">
+  <link rel="icon" href="../../assets/banner/flashreplay-hero-banner.png">
   <link rel="stylesheet" href="../wiki.css">
 </head>
 <body>
@@ -2296,6 +2303,7 @@ function renderRoot() {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Flash Replay Wiki</title>
   <meta name="description" content="Technical wiki for Flash Replay in Italian, English and Spanish.">
+  <link rel="icon" href="../assets/banner/flashreplay-hero-banner.png">
   <link rel="stylesheet" href="wiki.css">
 </head>
 <body>

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Permitted addons and developer guidelines | Flash Replay Wiki</title>
   <meta name="description" content="What you may build around Flash Replay, what is not allowed and how to publish compatible addons without breaking license or stability.">
+  <link rel="icon" href="../../assets/banner/flashreplay-hero-banner.png">
   <link rel="stylesheet" href="../wiki.css">
 </head>
 <body>
@@ -38,7 +39,7 @@
         <section class="doc-section" id="base-rule">
     <div class="section-kicker">01</div>
     <h2>Base rule</h2>
-    <p>Flash Replay is a Free download and is All Rights Reserved. You may create compatible addons or content, but you may not redistribute the mod, its assets, a modified jar or source code.</p><p>An addon must be a separate project that depends on the official mod installed by the user.</p>
+    <p>Flash Replay is a Free download and is All Rights Reserved. You may create compatible addons or content, but you may not redistribute the mod, its assets, a modified jar or source code.</p><p>An addon must be a separate project that depends on the official mod installed by the user.</p><p>Permitted add-ons are external content, presets, compatibility layers or integrations that respect user consent, license boundaries and the technical limits documented here.</p>
     
     
     
@@ -61,7 +62,7 @@
     <h2>Recommended technical contract</h2>
     
     
-    <ul><li>Treat <code>com.lordbanana.flashreplay.*</code> as internal unless a future public API page explicitly says otherwise.</li><li>Use optional dependencies and loader checks so your addon does not crash when Flash Replay is absent.</li><li>Do not mix into Flash Replay classes to change core behavior without explicit agreement.</li><li>Do not write directly into the user's config JSON; provide presets or controlled import instead.</li><li>Declare the tested Flash Replay, Minecraft and NeoForge versions.</li></ul>
+    <ul><li>Treat <code>com.lordbanana.flashreplay.*</code> as internal unless a future public API page explicitly says otherwise.</li><li>No stable SDK-style entry points are public yet: until they are documented here, do not treat them as supported.</li><li>Use optional dependencies and loader checks so your addon does not crash when Flash Replay is absent.</li><li>Do not mix into Flash Replay classes to change core behavior without explicit agreement.</li><li>Do not write directly into the user's config JSON; provide presets or controlled import instead.</li><li>Declare the tested Flash Replay, Minecraft and NeoForge versions.</li></ul>
     
   </section><section class="doc-section" id="naming-and-publishing">
     <div class="section-kicker">05</div>
