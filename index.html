@@ -172,6 +172,18 @@
       box-shadow: 0 22px 60px rgba(0,0,0,.34);
     }
     .media-card video { width: 100%; background: #050506; }
+    .gif-grid .card > img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: contain;
+      background: #050506;
+    }
+    .feature-grid .card > img:not(.strip) {
+      width: 100%;
+      aspect-ratio: 1920 / 920;
+      object-fit: cover;
+      background: #050506;
+    }
     .caption {
       padding: 12px 14px;
       color: var(--muted);
@@ -318,10 +330,10 @@
           </div>
         </div>
         <div class="media-card">
-          <video controls muted playsinline preload="metadata" poster="assets/thumb/showcase-poster.png">
-            <source src="assets/video/flashreplay-showcase.mp4" type="video/mp4">
+          <video controls muted playsinline preload="metadata" poster="assets/real/poster/real-replay-camera-path.jpg">
+            <source src="assets/real/video/real-replay-camera-path.mp4" type="video/mp4">
           </video>
-          <div class="caption">Short showcase built from Flash Replay gameplay/export footage plus presentation title cards.</div>
+          <div class="caption">Real Flash Replay MP4 export from a local replay, compressed for the presentation page.</div>
         </div>
       </div>
     </div>
@@ -333,28 +345,28 @@
             <p class="eyebrow">Fast proof</p>
             <h2>The three-second pitch</h2>
           </div>
-          <p>Marketplace pages convert better when the first scroll shows the loop: save the moment, direct the shot, export the clip. These GIFs are the assets to embed near the top of Modrinth and CurseForge.</p>
+          <p>Marketplace pages convert better when the first scroll proves the loop. These GIFs are converted from real Flash Replay MP4 exports, not generated UI animations.</p>
         </div>
         <div class="gif-grid">
           <article class="card">
-            <img src="assets/gif/save-last.gif" alt="Flash Replay Save Last GIF showing a captured gameplay moment">
+            <img src="assets/real/gif/real-actor-replay.gif" alt="Real Flash Replay GIF export showing a replay with actor and mob action">
             <div class="card__body">
-              <h3>Save Last</h3>
-              <p>Clip the moment after it already happened. No commands, no external recorder, no missed plays.</p>
+              <h3>Replay the moment</h3>
+              <p>Capture gameplay into a replay, then watch the same moment again without relying on a normal screen recording.</p>
             </div>
           </article>
           <article class="card">
-            <img src="assets/gif/director-camera.gif" alt="Flash Replay director camera GIF showing replay camera reframing">
+            <img src="assets/real/gif/real-replay-camera-path.gif" alt="Real Flash Replay GIF export showing a cinematic replay camera path">
             <div class="card__body">
               <h3>Director camera</h3>
               <p>Replay the action first, then rebuild the camera path for a cleaner cinematic shot.</p>
             </div>
           </article>
           <article class="card">
-            <img src="assets/gif/export-h264.gif" alt="Flash Replay export GIF showing H.264 render progress">
+            <img src="assets/real/gif/real-vertical-export.gif" alt="Real Flash Replay vertical GIF export for short-form video">
             <div class="card__body">
-              <h3>Export</h3>
-              <p>Render H.264, HEVC, ProRes, GIF, PNG sequences and clean stills for editing or posting.</p>
+              <h3>Export for platforms</h3>
+              <p>Render clips for widescreen edits or vertical short-form posts from the replay workflow.</p>
             </div>
           </article>
         </div>
@@ -368,12 +380,23 @@
             <p class="eyebrow">Creator workflow</p>
             <h2>One mod from capture to final clip</h2>
           </div>
-          <p>Each section below has a marketplace-ready image. The UI visuals are presentation previews, made to explain the workflow clearly while the real runtime media focuses on gameplay proof.</p>
+          <p>Every UI image below is a real NeoForge client screenshot captured from Flash Replay runtime smoke scenarios at 1920px width. Only captured runtime screenshots are used in this section.</p>
         </div>
         <div class="feature-grid">
           <article class="card">
+            <img src="assets/real/screenshots/flashreplay-options-recording.png" alt="Real Flash Replay Options screenshot with recording settings">
+            <div class="card__body">
+              <h3>Set up recording in minutes</h3>
+              <ul class="list">
+                <li>Open Flash Replay Options from the client UI.</li>
+                <li>Choose recording, Save Last, export and studio preferences before playing.</li>
+                <li>Keep setup clear for new players who want their first clip fast.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card">
             <img class="strip" src="assets/banner/strip-01-record.png" alt="Record everything feature strip">
-            <img src="assets/mockup/capture-hub.png" alt="Flash Replay Capture Hub presentation preview">
+            <img src="assets/real/screenshots/open-replay-design-capture-hub.png" alt="Real Flash Replay Capture Hub screenshot with clip list and replay timeline">
             <div class="card__body">
               <h3>Never miss the shot again</h3>
               <ul class="list">
@@ -385,7 +408,7 @@
           </article>
           <article class="card">
             <img class="strip" src="assets/banner/strip-02-camera.png" alt="Cinematic camera feature strip">
-            <img src="assets/mockup/director-timeline.png" alt="Flash Replay director timeline presentation preview">
+            <img src="assets/real/screenshots/open-replay-camera-rig.png" alt="Real Flash Replay camera rig screenshot with timeline keyframes">
             <div class="card__body">
               <h3>Shoot it like a film</h3>
               <ul class="list">
@@ -397,7 +420,7 @@
           </article>
           <article class="card">
             <img class="strip" src="assets/banner/strip-03-actors.png" alt="Actor Studio feature strip">
-            <img src="assets/mockup/actor-studio.png" alt="Flash Replay Actor Studio presentation preview">
+            <img src="assets/real/screenshots/open-replay-actor-appearance-equipment.png" alt="Real Flash Replay Actor Studio screenshot with actor equipment panel">
             <div class="card__body">
               <h3>Stage actors inside the replay</h3>
               <ul class="list">
@@ -409,7 +432,7 @@
           </article>
           <article class="card">
             <img class="strip" src="assets/banner/strip-04-look.png" alt="Look and mood feature strip">
-            <img src="assets/mockup/visuals-grade.png" alt="Flash Replay color grade presentation preview">
+            <img src="assets/real/screenshots/open-replay-design-cinematic-metrics.png" alt="Real Flash Replay cinematic metrics screenshot with motion diagnostics">
             <div class="card__body">
               <h3>Build the look in the tool</h3>
               <ul class="list">
@@ -421,7 +444,7 @@
           </article>
           <article class="card">
             <img class="strip" src="assets/banner/strip-05-export.png" alt="Export feature strip">
-            <img src="assets/mockup/export-dialog.png" alt="Flash Replay export dialog presentation preview">
+            <img src="assets/real/screenshots/open-replay-design-start-export.png" alt="Real Flash Replay Start Export screenshot with format and range controls">
             <div class="card__body">
               <h3>Export for real editing</h3>
               <ul class="list">
@@ -433,7 +456,7 @@
           </article>
           <article class="card">
             <img class="strip" src="assets/banner/strip-07-friendly.png" alt="Fast and friendly feature strip">
-            <img src="assets/mockup/studio-workspace.png" alt="Flash Replay studio workspace presentation preview">
+            <img src="assets/real/screenshots/open-replay-design-preferences.png" alt="Real Flash Replay Preferences screenshot with studio mode and capture settings">
             <div class="card__body">
               <h3>Simple first, deep when needed</h3>
               <ul class="list">
@@ -517,12 +540,12 @@
         </div>
         <div class="cta">
           <h2>Record something worth posting today.</h2>
-          <p class="lead">Flash Replay is a free download built for creators who want more than a plain screen recording. The page, GIFs and mockups in this kit are designed to make that value clear in the first few seconds.</p>
+          <p class="lead">Flash Replay is a free download built for creators who want more than a plain screen recording. The page now uses real runtime screenshots and real Flash Replay exports so players can see the actual workflow before downloading.</p>
           <div class="actions">
             <a class="btn" href="https://modrinth.com/mod/flash-replay">Download on Modrinth</a>
             <a class="btn btn--ghost" href="https://www.curseforge.com/minecraft/mc-mods/flash-replay">CurseForge page</a>
           </div>
-          <p class="small">Presentation assets only. This repository does not contain the mod source code or release builds.</p>
+          <p class="small">Presentation assets only. This repository does not contain the mod source code or release builds. Flash Replay is a free download. All Rights Reserved.</p>
         </div>
       </div>
     </section>

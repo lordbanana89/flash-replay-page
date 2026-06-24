@@ -31,23 +31,37 @@ Full video showcase:
 
 Clickable poster image:
 
-`https://lordbanana89.github.io/flash-replay-page/assets/thumb/showcase-poster.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/real/poster/real-replay-camera-path.jpg`
 
 Caption:
 
-Short showcase: save the moment, direct the replay camera, export the clip.
+Short showcase: real Flash Replay export footage and real runtime screenshots.
 
 ## Top GIF Strip
 
-Insert these three GIFs directly under the introduction.
+Insert these three real GIF exports directly under the introduction.
 
-- Save Last: `https://lordbanana89.github.io/flash-replay-page/assets/gif/save-last.gif`
-- Director Camera: `https://lordbanana89.github.io/flash-replay-page/assets/gif/director-camera.gif`
-- Export: `https://lordbanana89.github.io/flash-replay-page/assets/gif/export-h264.gif`
+- Replay actor export: `https://lordbanana89.github.io/flash-replay-page/assets/real/gif/real-actor-replay.gif`
+- Director camera export: `https://lordbanana89.github.io/flash-replay-page/assets/real/gif/real-replay-camera-path.gif`
+- Vertical export: `https://lordbanana89.github.io/flash-replay-page/assets/real/gif/real-vertical-export.gif`
 
 Caption:
 
-Save the moment after it happened. Reframe it with cinematic cameras. Export it for editing or posting.
+Replay a captured moment. Reframe it with a cinematic camera. Export a vertical clip for posting.
+
+## Section 0 - Set up recording in minutes
+
+Image:
+
+`https://lordbanana89.github.io/flash-replay-page/assets/real/screenshots/flashreplay-options-recording.png`
+
+Copy:
+
+Flash Replay starts with clear client-side options, so new players can configure recording, Save Last, export and studio preferences before they need their first clip.
+
+- Open Flash Replay Options from the client UI.
+- Choose recording and Save Last behavior before playing.
+- Keep the workflow friendly for first clips while advanced tools stay available later.
 
 ## Section 1 - Never miss the shot again
 
@@ -57,7 +71,7 @@ Strip:
 
 Image:
 
-`https://lordbanana89.github.io/flash-replay-page/assets/mockup/capture-hub.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/real/screenshots/open-replay-design-capture-hub.png`
 
 Copy:
 
@@ -76,7 +90,7 @@ Strip:
 
 Image:
 
-`https://lordbanana89.github.io/flash-replay-page/assets/mockup/director-timeline.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/real/screenshots/open-replay-camera-rig.png`
 
 Copy:
 
@@ -95,7 +109,7 @@ Strip:
 
 Image:
 
-`https://lordbanana89.github.io/flash-replay-page/assets/mockup/actor-studio.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/real/screenshots/open-replay-actor-appearance-equipment.png`
 
 Copy:
 
@@ -114,7 +128,7 @@ Strip:
 
 Image:
 
-`https://lordbanana89.github.io/flash-replay-page/assets/mockup/visuals-grade.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/real/screenshots/open-replay-design-cinematic-metrics.png`
 
 Copy:
 
@@ -133,7 +147,7 @@ Strip:
 
 Image:
 
-`https://lordbanana89.github.io/flash-replay-page/assets/mockup/export-dialog.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/real/screenshots/open-replay-design-start-export.png`
 
 Copy:
 
@@ -153,7 +167,7 @@ Strip:
 
 Image:
 
-`https://lordbanana89.github.io/flash-replay-page/assets/mockup/studio-workspace.png`
+`https://lordbanana89.github.io/flash-replay-page/assets/real/screenshots/open-replay-design-preferences.png`
 
 Copy:
 

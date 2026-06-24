@@ -10,10 +10,10 @@ It contains:
 - `curseforge-description.html` - paste-ready CurseForge source HTML.
 - `curseforge-html-preview.html` - browser preview of the paste-ready CurseForge HTML.
 - `assets/banner/` - hero and feature strip PNGs.
-- `assets/gif/` - marketplace GIFs.
-- `assets/video/` - compressed MP4 preview clips.
-- `assets/thumb/` - video posters/title cards.
-- `assets/mockup/` - presentation UI preview images.
+- `assets/real/screenshots/` - real NeoForge client screenshots captured from Flash Replay runtime smoke scenarios.
+- `assets/real/gif/` - real GIFs converted from Flash Replay MP4 exports.
+- `assets/real/video/` - compressed real Flash Replay MP4 exports.
+- `assets/real/poster/` - poster frames from real Flash Replay MP4 exports.
 
 It does not contain mod source code, Gradle files, jars, logs, private wiki notes, or build outputs.
 
@@ -23,13 +23,13 @@ GitHub Pages:
 
 `https://lordbanana89.github.io/flash-replay-page/`
 
-Raw asset base:
+Hosted asset base:
 
-`https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/`
+`https://lordbanana89.github.io/flash-replay-page/`
 
 Example:
 
-`https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/gif/save-last.gif`
+`https://lordbanana89.github.io/flash-replay-page/assets/real/gif/real-replay-camera-path.gif`
 
 ## Marketplace Links
 

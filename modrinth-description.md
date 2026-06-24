@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/banner/flashreplay-hero-banner.png" alt="Flash Replay - record anything, then direct it like a film" width="900">
+  <img src="https://lordbanana89.github.io/flash-replay-page/assets/banner/flashreplay-hero-banner.png" alt="Flash Replay - record anything, then direct it like a film" width="900">
 </p>
 
 # Flash Replay
@@ -11,24 +11,34 @@ It is built for YouTubers, montage editors, server creators, builders and anyone
 **Minecraft 1.21.1 - NeoForge 21.1.233+ - client-side - free download.**
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/video/flashreplay-showcase.mp4">
-    <img src="https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/thumb/showcase-poster.png" alt="Watch the Flash Replay showcase video" width="900">
+  <a href="https://lordbanana89.github.io/flash-replay-page/assets/real/video/real-replay-camera-path.mp4">
+    <img src="https://lordbanana89.github.io/flash-replay-page/assets/real/poster/real-replay-camera-path.jpg" alt="Watch the Flash Replay showcase video" width="900">
   </a>
 </p>
 
 ## The short version
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/gif/save-last.gif" alt="Save Last captures a moment after it happens" width="285">
-  <img src="https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/gif/director-camera.gif" alt="Director camera reframes a replay after capture" width="285">
-  <img src="https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/gif/export-h264.gif" alt="Export dialog rendering an H.264 clip" width="285">
+  <img src="https://lordbanana89.github.io/flash-replay-page/assets/real/gif/real-actor-replay.gif" alt="Real Flash Replay GIF export showing replay actor and mob action" width="285">
+  <img src="https://lordbanana89.github.io/flash-replay-page/assets/real/gif/real-replay-camera-path.gif" alt="Real Flash Replay GIF export showing a cinematic camera path" width="285">
+  <img src="https://lordbanana89.github.io/flash-replay-page/assets/real/gif/real-vertical-export.gif" alt="Real Flash Replay vertical GIF export for short-form video" width="285">
 </p>
 
-- **Save Last:** clip the moment after it already happened.
+- **Capture:** record gameplay into replay clips and Save Last moments.
 - **Director camera:** replay first, rebuild the camera move later.
-- **Export:** render clips, GIFs, stills and sequences for editing or posting.
+- **Export:** render real MP4 and GIF clips for editing or posting.
 
 ---
+
+## Set up recording in minutes
+
+Flash Replay starts with clear client-side options, so new players can configure recording, Save Last, export and studio preferences before they need their first clip.
+
+- Open Flash Replay Options from the client UI.
+- Choose recording and Save Last behavior before playing.
+- Keep the workflow friendly for first clips while advanced tools stay available later.
+
+![Real Flash Replay Options screenshot](https://lordbanana89.github.io/flash-replay-page/assets/real/screenshots/flashreplay-options-recording.png)
 
 ## Never miss the shot again
 
@@ -39,7 +49,7 @@ Flash Replay keeps a rolling replay buffer so your best moments do not disappear
 - Highlight triggers for deaths, combat, elytra flight and danger moments.
 - Simple controls from the pause menu and options screen.
 
-![Flash Replay Capture Hub presentation preview](https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/mockup/capture-hub.png)
+![Real Flash Replay Capture Hub screenshot](https://lordbanana89.github.io/flash-replay-page/assets/real/screenshots/open-replay-design-capture-hub.png)
 
 ## Shoot it like a film
 
@@ -50,7 +60,7 @@ Plain screen recordings lock you to the camera you had while playing. Flash Repl
 - Timeline keyframes with smooth interpolation curves.
 - Project, scene, shot and take organization for bigger edits.
 
-![Flash Replay Director timeline presentation preview](https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/mockup/director-timeline.png)
+![Real Flash Replay camera rig timeline screenshot](https://lordbanana89.github.io/flash-replay-page/assets/real/screenshots/open-replay-camera-rig.png)
 
 ## Stage actors inside the replay
 
@@ -61,7 +71,7 @@ Turn replay entities into directable performers for thumbnails, machinima shots,
 - Save performance clips and replay them on cue.
 - Batch stills for character sheets and thumbnails.
 
-![Flash Replay Actor Studio presentation preview](https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/mockup/actor-studio.png)
+![Real Flash Replay Actor Studio equipment screenshot](https://lordbanana89.github.io/flash-replay-page/assets/real/screenshots/open-replay-actor-appearance-equipment.png)
 
 ## Build the look in the tool
 
@@ -72,7 +82,7 @@ Flash Replay is not only about recording. It is about making the final shot look
 - Grade exposure, contrast, saturation, temperature and tint.
 - Frame with rule-of-thirds, safe frame and letterbox guides.
 
-![Flash Replay color grade presentation preview](https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/mockup/visuals-grade.png)
+![Real Flash Replay cinematic metrics screenshot](https://lordbanana89.github.io/flash-replay-page/assets/real/screenshots/open-replay-design-cinematic-metrics.png)
 
 ## Export clips ready to post
 
@@ -84,7 +94,7 @@ Render your replay into the formats creators and editors actually use.
 - Audio bus controls for game, voice and scene audio.
 - Shader-friendly export workflows.
 
-![Flash Replay export dialog presentation preview](https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/mockup/export-dialog.png)
+![Real Flash Replay Start Export screenshot](https://lordbanana89.github.io/flash-replay-page/assets/real/screenshots/open-replay-design-start-export.png)
 
 ## Simple first, deep when needed
 
@@ -94,7 +104,7 @@ Flash Replay is designed to be useful in the first two minutes and still powerfu
 - **Director:** camera rigs, shots, keyframes and Looks.
 - **Pro:** curves, actors, batch tools and full export settings.
 
-![Flash Replay studio workspace presentation preview](https://raw.githubusercontent.com/lordbanana89/flash-replay-page/main/assets/mockup/studio-workspace.png)
+![Real Flash Replay preferences screenshot](https://lordbanana89.github.io/flash-replay-page/assets/real/screenshots/open-replay-design-preferences.png)
 
 ## Built for modded Minecraft creators
 
@@ -143,4 +153,4 @@ Flash Replay grows in stages. These are community download milestones, not fixed
 
 Flash Replay is a **free download** built by Lordbanana. If it saves a clip, share the result so other creators can find the mod.
 
-*Presentation images marked as previews are built to explain the workflow clearly. Runtime clips in the GIF/video assets are from Flash Replay footage.*
+*All UI screenshots above are real Flash Replay runtime captures. All GIFs above are real Flash Replay exports. Flash Replay is a free download. All Rights Reserved.*
