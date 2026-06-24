@@ -7,6 +7,8 @@ It contains:
 - `index.html` - GitHub Pages preview landing page.
 - `modrinth-description.md` - paste-ready Modrinth Markdown.
 - `curseforge-description.md` - CurseForge rich-editor copy and asset order.
+- `curseforge-description.html` - paste-ready CurseForge source HTML.
+- `curseforge-html-preview.html` - browser preview of the paste-ready CurseForge HTML.
 - `assets/banner/` - hero and feature strip PNGs.
 - `assets/gif/` - marketplace GIFs.
 - `assets/video/` - compressed MP4 preview clips.
