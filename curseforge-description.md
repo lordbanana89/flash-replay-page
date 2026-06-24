@@ -25,11 +25,7 @@ Buttons/links:
 
 ## Showcase Preview
 
-Full video showcase:
-
-`https://lordbanana89.github.io/flash-replay-page/`
-
-Clickable poster image:
+Poster image:
 
 `https://lordbanana89.github.io/flash-replay-page/assets/real/poster/real-replay-camera-path.jpg`
 
@@ -41,9 +37,9 @@ Short showcase: real Flash Replay export footage and real runtime screenshots.
 
 Insert these three real GIF exports directly under the introduction.
 
-- Replay actor export: `https://lordbanana89.github.io/flash-replay-page/assets/real/gif/real-actor-replay.gif`
-- Director camera export: `https://lordbanana89.github.io/flash-replay-page/assets/real/gif/real-replay-camera-path.gif`
-- Vertical export: `https://lordbanana89.github.io/flash-replay-page/assets/real/gif/real-vertical-export.gif`
+- Replay actor export: `https://lordbanana89.github.io/flash-replay-page/assets/curseforge/gif/cf-real-actor-replay.gif`
+- Director camera export: `https://lordbanana89.github.io/flash-replay-page/assets/curseforge/gif/cf-real-replay-camera-path.gif`
+- Vertical export: `https://lordbanana89.github.io/flash-replay-page/assets/curseforge/gif/cf-real-vertical-export.gif`
 
 Caption:
 
@@ -219,8 +215,7 @@ Flash Replay grows in stages. These are community download milestones, not fixed
 
 ## Download
 
-- [Download on Modrinth](https://modrinth.com/mod/flash-replay)
-- [Open the CurseForge page](https://www.curseforge.com/minecraft/mc-mods/flash-replay)
+Use the Files tab on this CurseForge project once the project is approved.
 
 Flash Replay is a **free download** built by Lordbanana. If it saves a clip, share the result so other creators can find the mod.
 

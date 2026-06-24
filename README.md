@@ -14,6 +14,7 @@ It contains:
 - `assets/real/gif/` - real GIFs converted from Flash Replay MP4 exports.
 - `assets/real/video/` - compressed real Flash Replay MP4 exports.
 - `assets/real/poster/` - poster frames from real Flash Replay MP4 exports.
+- `assets/curseforge/gif/` - smaller real GIF exports for CurseForge description approval.
 
 It does not contain mod source code, Gradle files, jars, logs, private wiki notes, or build outputs.
 
