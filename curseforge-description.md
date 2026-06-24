@@ -217,9 +217,13 @@ Flash Replay grows in stages. These are community download milestones, not fixed
 
 Use the Files tab on this CurseForge project once the project is approved.
 
-Complete wiki in Italian, English and Spanish:
+Complete technical wiki in Italian, English and Spanish:
 
 `https://lordbanana89.github.io/flash-replay-page/wiki/`
+
+Permitted addon guidelines:
+
+`https://lordbanana89.github.io/flash-replay-page/wiki/en/addons.html`
 
 Flash Replay is a **free download** built by Lordbanana. If it saves a clip, share the result so other creators can find the mod.
 

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recording | Flash Replay Wiki</title>
+  <meta name="description" content="How gameplay capture works, Normal/Rolling/Hybrid modes, event markers and server recording policy.">
+  <link rel="stylesheet" href="../wiki.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><img src="../../assets/banner/flashreplay-hero-banner.png" alt=""> <span>Flash Replay Wiki</span></a>
+    <div class="lang-switch" aria-label="Languages">
+    <a href="../it/recording.html">Italiano</a><a aria-current="true" href="../en/recording.html">English</a><a href="../es/recording.html">Español</a>
+  </div>
+  </header>
+  <div class="layout">
+    <nav class="side-nav" aria-label="Pages">
+    <div class="side-nav__title">Pages</div>
+    <a href="index.html">Index</a><a href="setup.html">Installation</a><a aria-current="page" href="recording.html">Recording</a><a href="save-last.html">Save Last</a><a href="capture-hub.html">Capture Hub</a><a href="replay-editor.html">Replay editor</a><a href="timeline.html">Timeline</a><a href="camera.html">Camera</a><a href="actors.html">Actor Studio</a><a href="visuals.html">Visuals</a><a href="export.html">Export</a><a href="files.html">Files and recovery</a><a href="settings.html">Settings</a><a href="troubleshooting.html">Troubleshooting</a><a href="addons.html">Permitted addons</a>
+  </nav>
+    <main class="content">
+      <article class="doc">
+        <div class="breadcrumbs"><a href="../index.html">Language index</a><span>/</span><a href="index.html">Wiki index</a></div>
+        <header class="doc-hero">
+          <div>
+            <p class="eyebrow">Technical wiki for creators and addon developers.</p>
+            <h1>Recording</h1>
+            <p class="lead">How gameplay capture works, Normal/Rolling/Hybrid modes, event markers and server recording policy.</p>
+            <div class="badges"><span>Free download</span><span>All Rights Reserved</span><span>NeoForge 1.21.1</span></div>
+          </div>
+          <figure class="hero-media">
+        <img src="../../assets/wiki/gif/wiki-options-recording.gif" alt="Recording" loading="eager">
+        <figcaption>Verified real assets</figcaption>
+      </figure>
+        </header>
+        
+        <section class="doc-section" id="what-is-recorded">
+    <div class="section-kicker">01</div>
+    <h2>What is recorded</h2>
+    <p>A recording saves a replay session that can be reopened in the editor. During gameplay the mod captures packets, world state, entities, local-player motion and optional data such as hotbar or voice chat when compatible.</p><p>The output is not a video. It is a replay session that you can reopen, trim, direct with cameras, edit with actors and export later.</p>
+    
+    
+    
+  </section><section class="doc-section" id="capture-modes">
+    <div class="section-kicker">02</div>
+    <h2>Capture modes</h2>
+    
+    <div class="table-wrap"><table><thead><tr><th>Mode</th><th>Best for</th><th>Behavior</th></tr></thead><tbody><tr><td>Normal</td><td>Planned full recordings</td><td>Keeps the whole session until you save or finish it.</td></tr><tr><td>Rolling</td><td>DVR-style clips</td><td>Keeps a recent time window and prunes older material.</td></tr><tr><td>Hybrid</td><td>Long sessions</td><td>Combines a time window and disk budget to prevent uncontrolled growth.</td></tr></tbody></table></div>
+    
+    
+  </section><section class="doc-section" id="important-settings">
+    <div class="section-kicker">03</div>
+    <h2>Important settings</h2>
+    
+    
+    <ul><li><code>Chunk length seconds</code>: recording segment length.</li><li><code>Rolling retained seconds</code>: how much recent time Rolling keeps.</li><li><code>Mark dimension changes</code>: creates markers when you change dimension.</li><li><code>Local player updates per second</code>: increases local-player movement fidelity.</li><li><code>Record voice chat</code>: shown only when a compatible voice chat mod is loaded.</li></ul>
+    
+  </section><section class="doc-section" id="automation-profiles">
+    <div class="section-kicker">04</div>
+    <h2>Automation profiles</h2>
+    
+    <div class="table-wrap"><table><thead><tr><th>Profile</th><th>Use</th></tr></thead><tbody><tr><td>Safe</td><td>Only auto-finish on maximum duration.</td></tr><tr><td>Highlights</td><td>Combat, death and big falls save clips or highlights.</td></tr><tr><td>Hazards</td><td>Fire, freezing, wither and darkness create markers or Save Last clips.</td></tr><tr><td>Movement</td><td>Dimension changes, elytra and major falls.</td></tr><tr><td>Manual Locked</td><td>Starts and locks on critical events, then requires manual finish.</td></tr></tbody></table></div>
+    
+    
+  </section>
+      </article>
+    </main>
+    <aside class="toc" aria-label="On this page">
+    <div class="toc__title">On this page</div>
+    <a href="#what-is-recorded">What is recorded</a><a href="#capture-modes">Capture modes</a><a href="#important-settings">Important settings</a><a href="#automation-profiles">Automation profiles</a>
+  </aside>
+  </div>
+  <footer class="footer">Flash Replay and its assets are All Rights Reserved. This public wiki explains usage, compatibility and permitted addons without distributing the mod source code.</footer>
+  <script src="../wiki.js"></script>
+</body>
+</html>

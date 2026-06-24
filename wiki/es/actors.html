@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actor Studio | Flash Replay Wiki</title>
+  <meta name="description" content="Actores, puppets, identidad, equipamiento, pose, performance clips, animation library y crowd placement.">
+  <link rel="stylesheet" href="../wiki.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><img src="../../assets/banner/flashreplay-hero-banner.png" alt=""> <span>Flash Replay Wiki</span></a>
+    <div class="lang-switch" aria-label="Languages">
+    <a href="../it/actors.html">Italiano</a><a href="../en/actors.html">English</a><a aria-current="true" href="../es/actors.html">Español</a>
+  </div>
+  </header>
+  <div class="layout">
+    <nav class="side-nav" aria-label="Paginas">
+    <div class="side-nav__title">Paginas</div>
+    <a href="index.html">Indice</a><a href="setup.html">Instalacion</a><a href="recording.html">Grabacion</a><a href="save-last.html">Save Last</a><a href="capture-hub.html">Capture Hub</a><a href="replay-editor.html">Editor replay</a><a href="timeline.html">Timeline</a><a href="camera.html">Camara</a><a aria-current="page" href="actors.html">Actor Studio</a><a href="visuals.html">Visuals</a><a href="export.html">Export</a><a href="files.html">Archivos</a><a href="settings.html">Ajustes</a><a href="troubleshooting.html">Troubleshooting</a><a href="addons.html">Addons permitidos</a>
+  </nav>
+    <main class="content">
+      <article class="doc">
+        <div class="breadcrumbs"><a href="../index.html">Indice de idiomas</a><span>/</span><a href="index.html">Indice wiki</a></div>
+        <header class="doc-hero">
+          <div>
+            <p class="eyebrow">Wiki tecnica para creadores y desarrolladores de addons.</p>
+            <h1>Actor Studio</h1>
+            <p class="lead">Actores, puppets, identidad, equipamiento, pose, performance clips, animation library y crowd placement.</p>
+            <div class="badges"><span>Free download</span><span>All Rights Reserved</span><span>NeoForge 1.21.1</span></div>
+          </div>
+          <figure class="hero-media">
+        <img src="../../assets/wiki/gif/wiki-actor-studio.gif" alt="Actor Studio" loading="eager">
+        <figcaption>Recursos reales verificados</figcaption>
+      </figure>
+        </header>
+        
+        <section class="doc-section" id="que-son-los-actores">
+    <div class="section-kicker">01</div>
+    <h2>Que son los actores</h2>
+    <p>Los actores son puppets controlables dentro del replay. Pueden representar players, mobs o NPCs y ayudan a reconstruir movimiento, roleplay, poses, acciones y shots que no salieron perfectos en la grabacion original.</p><p>Un actor puede insertarse como puppet nuevo o usarse como override de una entidad grabada.</p>
+    
+    
+    
+  </section><section class="doc-section" id="pestanas-principales">
+    <div class="section-kicker">02</div>
+    <h2>Pestanas principales</h2>
+    
+    <div class="table-wrap"><table><thead><tr><th>Pestana</th><th>Funcion</th></tr></thead><tbody><tr><td>Editor</td><td>Seleccion, transforms, write mode static/keyframe y herramientas principales.</td></tr><tr><td>Identity</td><td>Nombre, tipo de entidad, skin, cape, color y Pehkui scale.</td></tr><tr><td>Equipment</td><td>Armor, offhand, hotbar, inventario, curios e item picker.</td></tr><tr><td>Library</td><td>Performance clips, libreria <code>.franim</code> y reutilizacion.</td></tr></tbody></table></div>
+    
+    
+  </section><section class="doc-section" id="write-mode">
+    <div class="section-kicker">03</div>
+    <h2>Write mode</h2>
+    
+    
+    <ul><li><code>Static</code>: escribe transform en la pose estatica del actor.</li><li><code>Keyframe</code>: escribe transform como keyframe en el tick actual.</li><li><code>Offset</code>: reservado para un target futuro; usa Static o Keyframe en la build actual.</li></ul>
+    
+  </section><section class="doc-section" id="performance-clips">
+    <div class="section-kicker">04</div>
+    <h2>Performance clips</h2>
+    
+    
+    
+    <ol><li>Selecciona un actor.</li><li>Pulsa <code>Record Performance Clip</code>.</li><li>Mueve la camara como controlador de movimiento.</li><li>Deten la grabacion performance.</li><li>Revisa la clip y aplicala al actor o guardala.</li><li>Usa <code>To Library</code> para crear un archivo <code>.franim</code> reutilizable.</li></ol>
+  </section><section class="doc-section" id="equipment-e-item-picker">
+    <div class="section-kicker">05</div>
+    <h2>Equipment e item picker</h2>
+    <p>El item picker renderiza items desde assets reales del juego. Puedes buscar, filtrar namespace, usar categorias y Recent. Componentes complejos, enchantments y trims son futuros si no aparecen en el control actual.</p>
+    
+    
+    
+  </section>
+      </article>
+    </main>
+    <aside class="toc" aria-label="En esta pagina">
+    <div class="toc__title">En esta pagina</div>
+    <a href="#que-son-los-actores">Que son los actores</a><a href="#pestanas-principales">Pestanas principales</a><a href="#write-mode">Write mode</a><a href="#performance-clips">Performance clips</a><a href="#equipment-e-item-picker">Equipment e item picker</a>
+  </aside>
+  </div>
+  <footer class="footer">Flash Replay y sus recursos son All Rights Reserved. Esta wiki publica explica uso, compatibilidad y addons permitidos sin distribuir el codigo fuente de la mod.</footer>
+  <script src="../wiki.js"></script>
+</body>
+</html>

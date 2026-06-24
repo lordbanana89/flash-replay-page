@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Troubleshooting tecnico | Flash Replay Wiki</title>
+  <meta name="description" content="Problemas comunes, causas probables y checks concretos antes de soporte.">
+  <link rel="stylesheet" href="../wiki.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><img src="../../assets/banner/flashreplay-hero-banner.png" alt=""> <span>Flash Replay Wiki</span></a>
+    <div class="lang-switch" aria-label="Languages">
+    <a href="../it/troubleshooting.html">Italiano</a><a href="../en/troubleshooting.html">English</a><a aria-current="true" href="../es/troubleshooting.html">Español</a>
+  </div>
+  </header>
+  <div class="layout">
+    <nav class="side-nav" aria-label="Paginas">
+    <div class="side-nav__title">Paginas</div>
+    <a href="index.html">Indice</a><a href="setup.html">Instalacion</a><a href="recording.html">Grabacion</a><a href="save-last.html">Save Last</a><a href="capture-hub.html">Capture Hub</a><a href="replay-editor.html">Editor replay</a><a href="timeline.html">Timeline</a><a href="camera.html">Camara</a><a href="actors.html">Actor Studio</a><a href="visuals.html">Visuals</a><a href="export.html">Export</a><a href="files.html">Archivos</a><a href="settings.html">Ajustes</a><a aria-current="page" href="troubleshooting.html">Troubleshooting</a><a href="addons.html">Addons permitidos</a>
+  </nav>
+    <main class="content">
+      <article class="doc">
+        <div class="breadcrumbs"><a href="../index.html">Indice de idiomas</a><span>/</span><a href="index.html">Indice wiki</a></div>
+        <header class="doc-hero">
+          <div>
+            <p class="eyebrow">Wiki tecnica para creadores y desarrolladores de addons.</p>
+            <h1>Troubleshooting tecnico</h1>
+            <p class="lead">Problemas comunes, causas probables y checks concretos antes de soporte.</p>
+            <div class="badges"><span>Free download</span><span>All Rights Reserved</span><span>NeoForge 1.21.1</span></div>
+          </div>
+          <figure class="hero-media">
+        <img src="../../assets/wiki/gif/wiki-preferences.gif" alt="Troubleshooting tecnico" loading="eager">
+        <figcaption>Recursos reales verificados</figcaption>
+      </figure>
+        </header>
+        
+        <section class="doc-section" id="la-mod-no-aparece">
+    <div class="section-kicker">01</div>
+    <h2>La mod no aparece</h2>
+    
+    
+    <ul><li>Comprueba que usas NeoForge y la version Minecraft soportada.</li><li>Verifica que el <code>.jar</code> esta en la carpeta <code>mods</code> correcta.</li><li>Prueba sin mods no esenciales si sospechas conflicto de carga.</li></ul>
+    
+  </section><section class="doc-section" id="recording-no-empieza">
+    <div class="section-kicker">02</div>
+    <h2>Recording no empieza</h2>
+    
+    
+    <ul><li>Revisa keybinds sin asignar o en conflicto.</li><li>Si usas politica por servidor, asegúrate de que no este OFF o MANUAL cuando esperas auto-start.</li><li>Las automatizaciones estan desactivadas por defecto.</li></ul>
+    
+  </section><section class="doc-section" id="save-last-no-capturo-el-momento">
+    <div class="section-kicker">03</div>
+    <h2>Save Last no capturo el momento</h2>
+    
+    
+    <ul><li>Aumenta rolling retained seconds.</li><li>Agrega pre-roll y post-roll.</li><li>Usa Hybrid para sesiones largas con limite disco.</li><li>Pulsa la tecla poco despues del evento.</li></ul>
+    
+  </section><section class="doc-section" id="export-lento">
+    <div class="section-kicker">04</div>
+    <h2>Export lento</h2>
+    
+    
+    <ul><li>Baja resolucion o FPS.</li><li>Desactiva SSAA.</li><li>Usa menor bitrate o CRF mas alto.</li><li>Desactiva shaderpacks pesados o elige uno mas ligero.</li><li>Prueba un rango corto antes del render final.</li></ul>
+    
+  </section><section class="doc-section" id="entidades-faltantes-o-no-deseadas">
+    <div class="section-kicker">05</div>
+    <h2>Entidades faltantes o no deseadas</h2>
+    <p>Revisa Render Filter antes de reportar bug. Si ocultaste una entidad o particula, puede seguir filtrada.</p>
+    
+    
+    
+  </section>
+      </article>
+    </main>
+    <aside class="toc" aria-label="En esta pagina">
+    <div class="toc__title">En esta pagina</div>
+    <a href="#la-mod-no-aparece">La mod no aparece</a><a href="#recording-no-empieza">Recording no empieza</a><a href="#save-last-no-capturo-el-momento">Save Last no capturo el momento</a><a href="#export-lento">Export lento</a><a href="#entidades-faltantes-o-no-deseadas">Entidades faltantes o no deseadas</a>
+  </aside>
+  </div>
+  <footer class="footer">Flash Replay y sus recursos son All Rights Reserved. Esta wiki publica explica uso, compatibilidad y addons permitidos sin distribuir el codigo fuente de la mod.</footer>
+  <script src="../wiki.js"></script>
+</body>
+</html>

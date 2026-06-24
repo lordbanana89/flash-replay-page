@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Troubleshooting tecnico | Flash Replay Wiki</title>
+  <meta name="description" content="Problemi comuni, cause probabili e controlli concreti prima di chiedere supporto.">
+  <link rel="stylesheet" href="../wiki.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><img src="../../assets/banner/flashreplay-hero-banner.png" alt=""> <span>Flash Replay Wiki</span></a>
+    <div class="lang-switch" aria-label="Languages">
+    <a aria-current="true" href="../it/troubleshooting.html">Italiano</a><a href="../en/troubleshooting.html">English</a><a href="../es/troubleshooting.html">Español</a>
+  </div>
+  </header>
+  <div class="layout">
+    <nav class="side-nav" aria-label="Pagine">
+    <div class="side-nav__title">Pagine</div>
+    <a href="index.html">Indice</a><a href="setup.html">Installazione</a><a href="recording.html">Registrazione</a><a href="save-last.html">Save Last</a><a href="capture-hub.html">Capture Hub</a><a href="replay-editor.html">Editor replay</a><a href="timeline.html">Timeline</a><a href="camera.html">Camera</a><a href="actors.html">Actor Studio</a><a href="visuals.html">Visuals</a><a href="export.html">Export</a><a href="files.html">File e recupero</a><a href="settings.html">Impostazioni</a><a aria-current="page" href="troubleshooting.html">Troubleshooting</a><a href="addons.html">Addon concessi</a>
+  </nav>
+    <main class="content">
+      <article class="doc">
+        <div class="breadcrumbs"><a href="../index.html">Indice lingue</a><span>/</span><a href="index.html">Indice wiki</a></div>
+        <header class="doc-hero">
+          <div>
+            <p class="eyebrow">Wiki tecnica per creator e sviluppatori addon.</p>
+            <h1>Troubleshooting tecnico</h1>
+            <p class="lead">Problemi comuni, cause probabili e controlli concreti prima di chiedere supporto.</p>
+            <div class="badges"><span>Free download</span><span>All Rights Reserved</span><span>NeoForge 1.21.1</span></div>
+          </div>
+          <figure class="hero-media">
+        <img src="../../assets/wiki/gif/wiki-preferences.gif" alt="Troubleshooting tecnico" loading="eager">
+        <figcaption>Asset reali verificati</figcaption>
+      </figure>
+        </header>
+        
+        <section class="doc-section" id="la-mod-non-compare">
+    <div class="section-kicker">01</div>
+    <h2>La mod non compare</h2>
+    
+    
+    <ul><li>Controlla che il loader sia NeoForge e la versione Minecraft sia quella supportata dalla build.</li><li>Verifica che il <code>.jar</code> sia nella cartella <code>mods</code> del profilo corretto.</li><li>Avvia senza mod non essenziali se sospetti un conflitto di caricamento.</li></ul>
+    
+  </section><section class="doc-section" id="recording-non-parte">
+    <div class="section-kicker">02</div>
+    <h2>Recording non parte</h2>
+    
+    
+    <ul><li>Controlla keybind non assegnati o in conflitto.</li><li>Se usi per-server policy, verifica che il server non sia impostato su OFF o MANUAL quando ti aspetti auto-start.</li><li>Se usi automazioni, ricorda che sono disattivate di default.</li></ul>
+    
+  </section><section class="doc-section" id="save-last-non-salva-quello-che-volevi">
+    <div class="section-kicker">03</div>
+    <h2>Save Last non salva quello che volevi</h2>
+    
+    
+    <ul><li>Aumenta rolling retained seconds.</li><li>Aggiungi pre-roll e post-roll.</li><li>Usa Hybrid per sessioni lunghe dove vuoi limitare il disco.</li><li>Premi il keybind appena dopo l'evento, non molto tempo dopo.</li></ul>
+    
+  </section><section class="doc-section" id="export-lento-o-pesante">
+    <div class="section-kicker">04</div>
+    <h2>Export lento o pesante</h2>
+    
+    
+    <ul><li>Riduci risoluzione o FPS.</li><li>Disattiva SSAA.</li><li>Usa bitrate piu basso o CRF piu alto.</li><li>Chiudi shaderpack pesanti o scegli un export shader pack piu leggero.</li><li>Per debug, esporta un range breve prima del render finale.</li></ul>
+    
+  </section><section class="doc-section" id="entita-o-particelle-indesiderate">
+    <div class="section-kicker">05</div>
+    <h2>Entita o particelle indesiderate</h2>
+    <p>Usa Render Filter prima di esportare. Se hai nascosto qualcosa e poi non lo vedi piu, riapri Render Filter e controlla i filtri attivi prima di segnalare un bug.</p>
+    
+    
+    
+  </section>
+      </article>
+    </main>
+    <aside class="toc" aria-label="In questa pagina">
+    <div class="toc__title">In questa pagina</div>
+    <a href="#la-mod-non-compare">La mod non compare</a><a href="#recording-non-parte">Recording non parte</a><a href="#save-last-non-salva-quello-che-volevi">Save Last non salva quello che volevi</a><a href="#export-lento-o-pesante">Export lento o pesante</a><a href="#entita-o-particelle-indesiderate">Entita o particelle indesiderate</a>
+  </aside>
+  </div>
+  <footer class="footer">Flash Replay e i suoi asset sono All Rights Reserved. La wiki pubblica spiega uso, compatibilita e addon concessi senza distribuire codice sorgente della mod.</footer>
+  <script src="../wiki.js"></script>
+</body>
+</html>

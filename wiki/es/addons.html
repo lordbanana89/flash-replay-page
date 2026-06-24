@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Addons permitidos y guia para desarrolladores | Flash Replay Wiki</title>
+  <meta name="description" content="Que se puede crear alrededor de Flash Replay, que no esta permitido y como publicar addons compatibles sin romper licencia o estabilidad.">
+  <link rel="stylesheet" href="../wiki.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><img src="../../assets/banner/flashreplay-hero-banner.png" alt=""> <span>Flash Replay Wiki</span></a>
+    <div class="lang-switch" aria-label="Languages">
+    <a href="../it/addons.html">Italiano</a><a href="../en/addons.html">English</a><a aria-current="true" href="../es/addons.html">Español</a>
+  </div>
+  </header>
+  <div class="layout">
+    <nav class="side-nav" aria-label="Paginas">
+    <div class="side-nav__title">Paginas</div>
+    <a href="index.html">Indice</a><a href="setup.html">Instalacion</a><a href="recording.html">Grabacion</a><a href="save-last.html">Save Last</a><a href="capture-hub.html">Capture Hub</a><a href="replay-editor.html">Editor replay</a><a href="timeline.html">Timeline</a><a href="camera.html">Camara</a><a href="actors.html">Actor Studio</a><a href="visuals.html">Visuals</a><a href="export.html">Export</a><a href="files.html">Archivos</a><a href="settings.html">Ajustes</a><a href="troubleshooting.html">Troubleshooting</a><a aria-current="page" href="addons.html">Addons permitidos</a>
+  </nav>
+    <main class="content">
+      <article class="doc">
+        <div class="breadcrumbs"><a href="../index.html">Indice de idiomas</a><span>/</span><a href="index.html">Indice wiki</a></div>
+        <header class="doc-hero">
+          <div>
+            <p class="eyebrow">Wiki tecnica para creadores y desarrolladores de addons.</p>
+            <h1>Addons permitidos y guia para desarrolladores</h1>
+            <p class="lead">Que se puede crear alrededor de Flash Replay, que no esta permitido y como publicar addons compatibles sin romper licencia o estabilidad.</p>
+            <div class="badges"><span>Free download</span><span>All Rights Reserved</span><span>NeoForge 1.21.1</span></div>
+          </div>
+          <figure class="hero-media">
+        <img src="../../assets/real/gif/real-actor-replay.gif" alt="Addons permitidos y guia para desarrolladores" loading="eager">
+        <figcaption>Recursos reales verificados</figcaption>
+      </figure>
+        </header>
+        
+        <section class="doc-section" id="regla-base">
+    <div class="section-kicker">01</div>
+    <h2>Regla base</h2>
+    <p>Flash Replay es Free download y All Rights Reserved. Puedes crear addons o contenido compatible, pero no puedes redistribuir la mod, sus assets, un jar modificado o codigo fuente.</p><p>Un addon debe ser un proyecto separado que depende de la mod oficial instalada por el usuario.</p>
+    
+    
+    
+  </section><section class="doc-section" id="tipos-de-addon-permitidos">
+    <div class="section-kicker">02</div>
+    <h2>Tipos de addon permitidos</h2>
+    
+    <div class="table-wrap"><table><thead><tr><th>Tipo addon</th><th>Permitido si</th></tr></thead><tbody><tr><td>Resource packs / traducciones</td><td>Usan tus propios assets o textos y no copian logo, iconos o media propietarios sin permiso.</td></tr><tr><td>Presets visuales o guias look</td><td>Distribuyen valores, instrucciones o archivos propios, no archivos internos de la mod.</td></tr><tr><td>Librerias <code>.franim</code></td><td>Contienen animaciones creadas por ti y no material privado sin consentimiento.</td></tr><tr><td>Packs skin/cape para actors</td><td>Usan skin/cape con derechos correctos e instrucciones claras.</td></tr><tr><td>Perfiles export</td><td>Distribuyen presets o valores documentados sin sobrescribir config del usuario a la fuerza.</td></tr><tr><td>Mods de compatibilidad</td><td>Usan dependencia opcional, no incluyen Flash Replay, no modifican el jar oficial y fallan de forma segura.</td></tr><tr><td>Server companion integrations</td><td>Requieren consentimiento client y nunca empiezan grabaciones sin opt-in explicito.</td></tr></tbody></table></div>
+    
+    
+  </section><section class="doc-section" id="no-permitido">
+    <div class="section-kicker">03</div>
+    <h2>No permitido</h2>
+    
+    
+    <ul><li>Redistribuir el jar Flash Replay dentro de un addon o como archivo modificado.</li><li>Publicar una build parcheada de Flash Replay.</li><li>Copiar codigo, UI, logo, banners, GIFs o screenshots oficiales como assets propios.</li><li>Usar nombres o iconos que hagan parecer oficial un addon no oficial.</li><li>Evitar consentimiento de usuario para recording, Save Last, export o upload.</li><li>Leer o subir replays/exports del usuario a servicios externos sin consentimiento claro.</li><li>Tratar clases internas inestables como contrato publico cuando esta wiki no las declara API.</li></ul>
+    
+  </section><section class="doc-section" id="contrato-tecnico-recomendado">
+    <div class="section-kicker">04</div>
+    <h2>Contrato tecnico recomendado</h2>
+    
+    
+    <ul><li>Trata <code>com.lordbanana.flashreplay.*</code> como interno salvo que una futura pagina API publica diga lo contrario.</li><li>Usa dependencias opcionales y checks de loader para no crashear si Flash Replay no esta instalado.</li><li>No hagas mixins dentro de clases Flash Replay para cambiar core sin acuerdo explicito.</li><li>No escribas directamente en el JSON de config del usuario; ofrece presets o import controlado.</li><li>Declara versiones testadas de Flash Replay, Minecraft y NeoForge.</li></ul>
+    
+  </section><section class="doc-section" id="naming-y-publicacion">
+    <div class="section-kicker">05</div>
+    <h2>Naming y publicacion</h2>
+    
+    
+    <ul><li>Nombre recomendado: <code>Addon Name for Flash Replay</code> o <code>Flash Replay compatibility for ModName</code>.</li><li>Escribe <code>Unofficial addon</code> claramente si no lo publica el maintainer de Flash Replay.</li><li>Linka la pagina oficial Flash Replay como dependencia.</li><li>No uses <code>Flash Replay</code> como unico nombre del proyecto.</li><li>Tu addon puede usar su propia licencia, pero no puede conceder derechos sobre Flash Replay o sus assets.</li></ul>
+    
+  </section><section class="doc-section" id="checklist-de-publicacion">
+    <div class="section-kicker">06</div>
+    <h2>Checklist de publicacion</h2>
+    
+    
+    
+    <ol><li>Verifica que el addon funciona sin incluir el jar Flash Replay.</li><li>Declara dependencias y versiones testadas.</li><li>Elimina assets Flash Replay copiados salvo permiso explicito.</li><li>Agrega nota de privacidad si tocas recording, replay files, exports o upload.</li><li>Testea arranque con y sin Flash Replay instalado.</li><li>Testea en un perfil Minecraft nuevo para no depender de tu config local.</li></ol>
+  </section>
+      </article>
+    </main>
+    <aside class="toc" aria-label="En esta pagina">
+    <div class="toc__title">En esta pagina</div>
+    <a href="#regla-base">Regla base</a><a href="#tipos-de-addon-permitidos">Tipos de addon permitidos</a><a href="#no-permitido">No permitido</a><a href="#contrato-tecnico-recomendado">Contrato tecnico recomendado</a><a href="#naming-y-publicacion">Naming y publicacion</a><a href="#checklist-de-publicacion">Checklist de publicacion</a>
+  </aside>
+  </div>
+  <footer class="footer">Flash Replay y sus recursos son All Rights Reserved. Esta wiki publica explica uso, compatibilidad y addons permitidos sin distribuir el codigo fuente de la mod.</footer>
+  <script src="../wiki.js"></script>
+</body>
+</html>

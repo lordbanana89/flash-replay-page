@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registrazione | Flash Replay Wiki</title>
+  <meta name="description" content="Come Flash Replay cattura il gameplay, differenza tra Normal, Rolling e Hybrid, marker automatici e registrazione su server.">
+  <link rel="stylesheet" href="../wiki.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><img src="../../assets/banner/flashreplay-hero-banner.png" alt=""> <span>Flash Replay Wiki</span></a>
+    <div class="lang-switch" aria-label="Languages">
+    <a aria-current="true" href="../it/recording.html">Italiano</a><a href="../en/recording.html">English</a><a href="../es/recording.html">Español</a>
+  </div>
+  </header>
+  <div class="layout">
+    <nav class="side-nav" aria-label="Pagine">
+    <div class="side-nav__title">Pagine</div>
+    <a href="index.html">Indice</a><a href="setup.html">Installazione</a><a aria-current="page" href="recording.html">Registrazione</a><a href="save-last.html">Save Last</a><a href="capture-hub.html">Capture Hub</a><a href="replay-editor.html">Editor replay</a><a href="timeline.html">Timeline</a><a href="camera.html">Camera</a><a href="actors.html">Actor Studio</a><a href="visuals.html">Visuals</a><a href="export.html">Export</a><a href="files.html">File e recupero</a><a href="settings.html">Impostazioni</a><a href="troubleshooting.html">Troubleshooting</a><a href="addons.html">Addon concessi</a>
+  </nav>
+    <main class="content">
+      <article class="doc">
+        <div class="breadcrumbs"><a href="../index.html">Indice lingue</a><span>/</span><a href="index.html">Indice wiki</a></div>
+        <header class="doc-hero">
+          <div>
+            <p class="eyebrow">Wiki tecnica per creator e sviluppatori addon.</p>
+            <h1>Registrazione</h1>
+            <p class="lead">Come Flash Replay cattura il gameplay, differenza tra Normal, Rolling e Hybrid, marker automatici e registrazione su server.</p>
+            <div class="badges"><span>Free download</span><span>All Rights Reserved</span><span>NeoForge 1.21.1</span></div>
+          </div>
+          <figure class="hero-media">
+        <img src="../../assets/wiki/gif/wiki-options-recording.gif" alt="Registrazione" loading="eager">
+        <figcaption>Asset reali verificati</figcaption>
+      </figure>
+        </header>
+        
+        <section class="doc-section" id="cosa-registra">
+    <div class="section-kicker">01</div>
+    <h2>Cosa registra</h2>
+    <p>La registrazione salva una sessione replay riproducibile dentro l'editor. Durante il gameplay la mod cattura pacchetti, stato del mondo, entita, posizione del player locale e dati opzionali come hotbar o voice chat se la compatibilita e disponibile.</p><p>Il risultato non e un video. E una sessione replay che puoi riaprire, tagliare, dirigere con camera, modificare con attori e poi esportare.</p>
+    
+    
+    
+  </section><section class="doc-section" id="modalita-di-cattura">
+    <div class="section-kicker">02</div>
+    <h2>Modalita di cattura</h2>
+    
+    <div class="table-wrap"><table><thead><tr><th>Modalita</th><th>Uso consigliato</th><th>Comportamento</th></tr></thead><tbody><tr><td>Normal</td><td>Registrazioni complete pianificate</td><td>Tiene tutta la sessione finche la salvi o la termini.</td></tr><tr><td>Rolling</td><td>Clip tipo DVR</td><td>Mantiene una finestra temporale recente e scarta il materiale piu vecchio.</td></tr><tr><td>Hybrid</td><td>Sessioni lunghe</td><td>Combina finestra temporale e limite disco per evitare crescita non controllata.</td></tr></tbody></table></div>
+    
+    
+  </section><section class="doc-section" id="parametri-importanti">
+    <div class="section-kicker">03</div>
+    <h2>Parametri importanti</h2>
+    
+    
+    <ul><li><code>Chunk length seconds</code>: durata dei segmenti di registrazione. Valori piu corti rendono la gestione piu granulare; valori piu lunghi riducono overhead.</li><li><code>Rolling retained seconds</code>: quanti secondi conservare in modalita Rolling.</li><li><code>Mark dimension changes</code>: aggiunge marker quando cambi dimensione.</li><li><code>Local player updates per second</code>: aumenta la fedelta dei movimenti del player locale quando serve una camera o un actor pass piu preciso.</li><li><code>Record voice chat</code>: disponibile solo se la mod voice chat compatibile e caricata.</li></ul>
+    
+  </section><section class="doc-section" id="automazioni-e-marker">
+    <div class="section-kicker">04</div>
+    <h2>Automazioni e marker</h2>
+    <p>Le automazioni sono disattivate di default per evitare avvii o salvataggi inattesi. Se le abiliti, scegli un profilo in base al tipo di contenuto.</p>
+    <div class="table-wrap"><table><thead><tr><th>Profilo</th><th>Quando usarlo</th></tr></thead><tbody><tr><td>Safe</td><td>Solo chiusura automatica su durata massima.</td></tr><tr><td>Highlights</td><td>Combat, morte e cadute importanti generano clip o highlight.</td></tr><tr><td>Hazards</td><td>Fuoco, freezing, wither e darkness generano marker o Save Last.</td></tr><tr><td>Movement</td><td>Dimension change, elytra e cadute importanti.</td></tr><tr><td>Manual Locked</td><td>Avvia e blocca su eventi critici, poi finisci manualmente.</td></tr></tbody></table></div>
+    
+    
+  </section>
+      </article>
+    </main>
+    <aside class="toc" aria-label="In questa pagina">
+    <div class="toc__title">In questa pagina</div>
+    <a href="#cosa-registra">Cosa registra</a><a href="#modalita-di-cattura">Modalita di cattura</a><a href="#parametri-importanti">Parametri importanti</a><a href="#automazioni-e-marker">Automazioni e marker</a>
+  </aside>
+  </div>
+  <footer class="footer">Flash Replay e i suoi asset sono All Rights Reserved. La wiki pubblica spiega uso, compatibilita e addon concessi senza distribuire codice sorgente della mod.</footer>
+  <script src="../wiki.js"></script>
+</body>
+</html>

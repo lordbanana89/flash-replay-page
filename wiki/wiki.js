@@ -1,22 +1,21 @@
-const buttons = Array.from(document.querySelectorAll("[data-set-lang]"));
-const panels = Array.from(document.querySelectorAll("[data-lang-panel]"));
+const links = [...document.querySelectorAll(".toc a")];
+const sections = links
+  .map((link) => document.querySelector(link.getAttribute("href")))
+  .filter(Boolean);
 
-function setLanguage(lang) {
-  document.documentElement.lang = lang;
-  buttons.forEach((button) => {
-    button.setAttribute("aria-pressed", String(button.dataset.setLang === lang));
-  });
-  panels.forEach((panel) => {
-    panel.classList.toggle("is-active", panel.dataset.langPanel === lang);
-  });
-  const url = new URL(window.location.href);
-  url.searchParams.set("lang", lang);
-  history.replaceState(null, "", url);
+if (sections.length > 0) {
+  const setActive = () => {
+    let active = sections[0].id;
+    for (const section of sections) {
+      if (section.getBoundingClientRect().top <= 140) {
+        active = section.id;
+      }
+    }
+    for (const link of links) {
+      link.toggleAttribute("aria-current", link.getAttribute("href") === `#${active}`);
+    }
+  };
+
+  document.addEventListener("scroll", setActive, { passive: true });
+  setActive();
 }
-
-buttons.forEach((button) => {
-  button.addEventListener("click", () => setLanguage(button.dataset.setLang));
-});
-
-const initial = new URL(window.location.href).searchParams.get("lang") || "it";
-setLanguage(["it", "en", "es"].includes(initial) ? initial : "it");
