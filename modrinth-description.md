@@ -106,6 +106,28 @@ Flash Replay is designed to be useful in the first two minutes and still powerfu
 | Actor and combat scenes | Stage thumbnails, machinima scenes and repeatable fight beats |
 | Legacy replay workflows | Keep older replay material useful while moving to a stronger tool |
 
+## Download goals and update roadmap
+
+Flash Replay grows in stages. These are community download milestones, not fixed dates; each step depends on testing, loader changes and Minecraft version stability.
+
+| Downloads | Goal |
+|---:|---|
+| **1,000** | Quick-start polish: clearer install text, first-run prompts, default keybind suggestions and a beginner-friendly Save Last setup |
+| **2,500** | Stability update for recording reliability, crash-safe recovery and cleaner replay session naming |
+| **5,000** | Highlight tuning for combat, deaths, elytra moments, fire, explosions and server-event clipping |
+| **10,000** | Export preset pack for YouTube, TikTok, Discord, GIF previews, transparent shots and high-quality archive renders |
+| **25,000** | Director update with more camera rig presets, reusable shot templates and smoother timeline editing |
+| **50,000** | Actor Studio expansion with pose presets, wardrobe workflows, performance clips and batch thumbnail tools |
+| **100,000** | Creator-pack compatibility pass for shaders, voice chat, large builds, combat animations and heavy modpacks |
+| **150,000** | Project workflow templates for trailers, build showcases, PvP montages, cinematic server intros and thumbnail sets |
+| **250,000** | Performance milestone: faster seek, lighter capture overhead, better export queue behavior and low-friction diagnostics |
+| **500,000** | Multi-version work begins: keep NeoForge 1.21.1 stable while opening the first 1.20.1 compatibility branch |
+| **750,000** | Fabric beta path: extract shared replay/editor logic and ship the first Fabric test line for the newest stable Minecraft branch |
+| **1,000,000** | Forge beta path: bring core recording, replay playback and export workflows to Forge after the shared core is proven |
+| **1,250,000** | Stable loader matrix for Fabric, Forge and NeoForge across the first supported 1.20.1 and 1.21.x lines |
+| **1,500,000** | Latest-version train: keep the newest Minecraft release moving alongside the long-term 1.20.1 creator branch |
+| **2,000,000** | Final availability target: Fabric, Forge and NeoForge support from Minecraft 1.20.1 through the latest stable versions, released in staged LTS tracks |
+
 ## Install
 
 1. Install **NeoForge 21.1.233+** for **Minecraft 1.21.1**.
