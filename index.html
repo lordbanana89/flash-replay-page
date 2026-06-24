@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flash Replay - Presentation Kit</title>
+  <meta name="description" content="Flash Replay presentation page and marketplace assets for a free NeoForge 1.21.1 replay and cinematic camera mod.">
+  <style>
+    :root {
+      --page: #0e0f12;
+      --panel: #17181c;
+      --panel-2: #202126;
+      --raised: #2a2c34;
+      --line: #3c404a;
+      --text: #eceef3;
+      --muted: #a5aab6;
+      --dim: #737884;
+      --red: #e0392b;
+      --red-hot: #fa3729;
+      --green: #74ca8a;
+      --blue: #80b7ff;
+      --max: 1120px;
+      font-family: "Source Sans 3", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 0%, rgba(224, 57, 43, .18), transparent 28rem),
+        linear-gradient(180deg, #131418 0%, var(--page) 42rem);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+    a { color: inherit; }
+    img, video { display: block; max-width: 100%; }
+    .top {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(14, 15, 18, .86);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+    }
+    .top__in {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .brand-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--red-hot);
+      box-shadow: 0 0 18px var(--red-hot);
+      flex: none;
+    }
+    .brand {
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .nav {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .nav a {
+      text-decoration: none;
+      color: var(--muted);
+      border: 1px solid transparent;
+      padding: 7px 10px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .nav a:hover { color: var(--text); border-color: var(--line); }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+    .hero { padding: 34px 0 52px; }
+    .hero-banner {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+      background: var(--panel);
+      box-shadow: 0 30px 90px rgba(0,0,0,.42);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(340px, .95fr);
+      gap: 28px;
+      align-items: center;
+      margin-top: 34px;
+    }
+    .eyebrow {
+      color: var(--red-hot);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      margin: 0 0 12px;
+    }
+    h1 {
+      font-size: clamp(42px, 8vw, 84px);
+      line-height: .92;
+      letter-spacing: .01em;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: clamp(30px, 5vw, 52px);
+      line-height: 1;
+      margin: 0 0 14px;
+      text-transform: uppercase;
+    }
+    h3 { margin: 0 0 10px; font-size: 23px; line-height: 1.15; }
+    .lead {
+      color: #d7dbe4;
+      font-size: 21px;
+      line-height: 1.45;
+      margin: 22px 0 0;
+      max-width: 58ch;
+    }
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 24px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      height: 34px;
+      padding: 0 12px;
+      border: 1px solid var(--line);
+      background: var(--panel-2);
+      border-radius: 4px;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .badge--red { color: var(--red-hot); border-color: #7b1d16; background: #241210; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 4px;
+      border: 1px solid transparent;
+      background: var(--red);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 900;
+    }
+    .btn:hover { background: var(--red-hot); }
+    .btn--ghost { background: transparent; border-color: var(--line); color: var(--text); }
+    .btn--ghost:hover { background: var(--panel-2); border-color: #555a66; }
+    .media-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--panel);
+      box-shadow: 0 22px 60px rgba(0,0,0,.34);
+    }
+    .media-card video { width: 100%; background: #050506; }
+    .caption {
+      padding: 12px 14px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      font-size: 14px;
+    }
+    section { padding: 56px 0; border-top: 1px solid rgba(60,64,74,.7); }
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr);
+      gap: 26px;
+      align-items: end;
+      margin-bottom: 24px;
+    }
+    .section-head p { color: var(--muted); margin: 0; font-size: 18px; }
+    .gif-grid, .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .card__body { padding: 18px; }
+    .card p { margin: 0; color: var(--muted); }
+    .strip { margin-bottom: 14px; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+    .list {
+      display: grid;
+      gap: 10px;
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .list li {
+      padding-left: 18px;
+      position: relative;
+      color: #d5d9e1;
+    }
+    .list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .72em;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--red-hot);
+    }
+    .compat {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+    .compat th, .compat td {
+      text-align: left;
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    .compat th {
+      color: var(--muted);
+      background: var(--panel-2);
+      font-size: 12px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .compat tr:last-child td { border-bottom: 0; }
+    .cta {
+      margin: 56px 0 76px;
+      border: 1px solid #7b1d16;
+      border-radius: 10px;
+      background: linear-gradient(180deg, #1b1216, #141114);
+      padding: clamp(24px, 5vw, 42px);
+    }
+    .small { color: var(--dim); font-size: 13px; }
+    @media (max-width: 860px) {
+      .top__in { align-items: flex-start; flex-direction: column; }
+      .nav { margin-left: 0; }
+      .hero-grid, .section-head, .gif-grid, .feature-grid { grid-template-columns: 1fr; }
+      section { padding: 40px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="top__in">
+      <span class="brand-dot"></span>
+      <span class="brand">Flash Replay</span>
+      <nav class="nav" aria-label="Page sections">
+        <a href="#demo">Demo</a>
+        <a href="#features">Features</a>
+        <a href="#compat">Compatibility</a>
+        <a href="#marketplace-copy">Marketplace copy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <div class="hero-banner">
+        <img src="assets/banner/flashreplay-hero-banner.png" alt="Flash Replay banner showing record, direct, export workflow for Minecraft 1.21.1 and NeoForge">
+      </div>
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Free NeoForge 1.21.1 replay studio</p>
+          <h1>Record anything. Direct it later.</h1>
+          <p class="lead">Flash Replay is a client-side replay recorder and cinematic studio for Minecraft creators. Save missed moments, rebuild the camera move, stage actors, grade the shot, and export clips ready to post.</p>
+          <div class="badges">
+            <span class="badge">Minecraft 1.21.1</span>
+            <span class="badge">NeoForge 21.1.233+</span>
+            <span class="badge">Client-side</span>
+            <span class="badge badge--red">Free download</span>
+          </div>
+          <div class="actions">
+            <a class="btn" href="https://modrinth.com/mod/flash-replay">Download on Modrinth</a>
+            <a class="btn btn--ghost" href="https://www.curseforge.com/minecraft/mc-mods/flash-replay">CurseForge page</a>
+          </div>
+        </div>
+        <div class="media-card">
+          <video controls muted playsinline preload="metadata" poster="assets/thumb/showcase-poster.png">
+            <source src="assets/video/flashreplay-showcase.mp4" type="video/mp4">
+          </video>
+          <div class="caption">Short showcase built from Flash Replay gameplay/export footage plus presentation title cards.</div>
+        </div>
+      </div>
+    </div>
+
+    <section id="demo">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Fast proof</p>
+            <h2>The three-second pitch</h2>
+          </div>
+          <p>Marketplace pages convert better when the first scroll shows the loop: save the moment, direct the shot, export the clip. These GIFs are the assets to embed near the top of Modrinth and CurseForge.</p>
+        </div>
+        <div class="gif-grid">
+          <article class="card">
+            <img src="assets/gif/save-last.gif" alt="Flash Replay Save Last GIF showing a captured gameplay moment">
+            <div class="card__body">
+              <h3>Save Last</h3>
+              <p>Clip the moment after it already happened. No commands, no external recorder, no missed plays.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/gif/director-camera.gif" alt="Flash Replay director camera GIF showing replay camera reframing">
+            <div class="card__body">
+              <h3>Director camera</h3>
+              <p>Replay the action first, then rebuild the camera path for a cleaner cinematic shot.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/gif/export-h264.gif" alt="Flash Replay export GIF showing H.264 render progress">
+            <div class="card__body">
+              <h3>Export</h3>
+              <p>Render H.264, HEVC, ProRes, GIF, PNG sequences and clean stills for editing or posting.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Creator workflow</p>
+            <h2>One mod from capture to final clip</h2>
+          </div>
+          <p>Each section below has a marketplace-ready image. The UI visuals are presentation previews, made to explain the workflow clearly while the real runtime media focuses on gameplay proof.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="card">
+            <img class="strip" src="assets/banner/strip-01-record.png" alt="Record everything feature strip">
+            <img src="assets/mockup/capture-hub.png" alt="Flash Replay Capture Hub presentation preview">
+            <div class="card__body">
+              <h3>Never miss the shot again</h3>
+              <ul class="list">
+                <li>Always-on replay buffer with Save Last capture.</li>
+                <li>Highlight triggers for combat, death, elytra flight and danger moments.</li>
+                <li>Clean controls from the pause menu and options screen.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card">
+            <img class="strip" src="assets/banner/strip-02-camera.png" alt="Cinematic camera feature strip">
+            <img src="assets/mockup/director-timeline.png" alt="Flash Replay director timeline presentation preview">
+            <div class="card__body">
+              <h3>Shoot it like a film</h3>
+              <ul class="list">
+                <li>Camera rigs for dolly, push-in, crane, orbit, dolly zoom and constant-speed moves.</li>
+                <li>Keyframe timeline with smooth curves and predictable motion.</li>
+                <li>Project, scene, shot and take organization for bigger edits.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card">
+            <img class="strip" src="assets/banner/strip-03-actors.png" alt="Actor Studio feature strip">
+            <img src="assets/mockup/actor-studio.png" alt="Flash Replay Actor Studio presentation preview">
+            <div class="card__body">
+              <h3>Stage actors inside the replay</h3>
+              <ul class="list">
+                <li>Turn replay entities into directable performers.</li>
+                <li>Pose, equip and group actors for thumbnails, machinima and cinematic scenes.</li>
+                <li>Use performance clips to repeat movement on cue.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card">
+            <img class="strip" src="assets/banner/strip-04-look.png" alt="Look and mood feature strip">
+            <img src="assets/mockup/visuals-grade.png" alt="Flash Replay color grade presentation preview">
+            <div class="card__body">
+              <h3>Build the look in the tool</h3>
+              <ul class="list">
+                <li>Keyframe FOV, fog, time, weather and camera shake.</li>
+                <li>Save reusable Looks for consistent color across shots.</li>
+                <li>Frame with rule-of-thirds, safe frame and letterbox guides.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card">
+            <img class="strip" src="assets/banner/strip-05-export.png" alt="Export feature strip">
+            <img src="assets/mockup/export-dialog.png" alt="Flash Replay export dialog presentation preview">
+            <div class="card__body">
+              <h3>Export for real editing</h3>
+              <ul class="list">
+                <li>H.264, HEVC, ProRes, GIF and PNG sequence workflows.</li>
+                <li>SSAA, transparent sky and shader-friendly exports.</li>
+                <li>Audio bus controls for game, voice and scene audio.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card">
+            <img class="strip" src="assets/banner/strip-07-friendly.png" alt="Fast and friendly feature strip">
+            <img src="assets/mockup/studio-workspace.png" alt="Flash Replay studio workspace presentation preview">
+            <div class="card__body">
+              <h3>Simple first, deep when needed</h3>
+              <ul class="list">
+                <li>Simple mode for first clips, Director mode for real edits, Pro mode for every control.</li>
+                <li>Floating panels keep the viewport, timeline, inspector and capture tools where creators need them.</li>
+                <li>Fast seek and saved layouts reduce friction during repeated edits.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="compat">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Modded Minecraft first</p>
+            <h2>Built for the packs creators actually play</h2>
+          </div>
+          <p>Flash Replay targets NeoForge 1.21.1 and is designed around modded creator workflows instead of a clean vanilla-only recording setup.</p>
+        </div>
+        <table class="compat">
+          <thead>
+            <tr><th>Area</th><th>Why it matters for downloads</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Shader workflows</td><td>Record and export cinematic clips with shader-driven visuals instead of plain screenshots.</td></tr>
+            <tr><td>Voice and multiplayer moments</td><td>Capture social clips and server moments people want to share.</td></tr>
+            <tr><td>Large builds and far shots</td><td>Use replay camera work for base tours, establishing shots and cinematic reveals.</td></tr>
+            <tr><td>Actor and combat scenes</td><td>Stage thumbnails, fights, machinima scenes and repeatable performance beats.</td></tr>
+            <tr><td>Legacy replay workflows</td><td>Keep older replay material useful while moving into a stronger cinematic tool.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="marketplace-copy">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Paste-ready copy</p>
+            <h2>Use these files on Modrinth and CurseForge</h2>
+          </div>
+          <p>The repo includes marketplace copy with GitHub raw asset URLs. Copy the Markdown into Modrinth, and use the CurseForge file as the order and text for its rich editor.</p>
+        </div>
+        <div class="actions">
+          <a class="btn" href="modrinth-description.md">Open Modrinth Markdown</a>
+          <a class="btn btn--ghost" href="curseforge-description.md">Open CurseForge copy</a>
+          <a class="btn btn--ghost" href="README.md">Asset manifest</a>
+        </div>
+        <div class="cta">
+          <h2>Record something worth posting today.</h2>
+          <p class="lead">Flash Replay is a free download built for creators who want more than a plain screen recording. The page, GIFs and mockups in this kit are designed to make that value clear in the first few seconds.</p>
+          <div class="actions">
+            <a class="btn" href="https://modrinth.com/mod/flash-replay">Download on Modrinth</a>
+            <a class="btn btn--ghost" href="https://www.curseforge.com/minecraft/mc-mods/flash-replay">CurseForge page</a>
+          </div>
+          <p class="small">Presentation assets only. This repository does not contain the mod source code or release builds.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
