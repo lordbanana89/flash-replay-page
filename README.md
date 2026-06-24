@@ -5,6 +5,7 @@ This repository hosts only public presentation material for Flash Replay marketp
 It contains:
 
 - `index.html` - GitHub Pages preview landing page.
+- `wiki/` - public trilingual wiki in Italian, English and Spanish.
 - `modrinth-description.md` - paste-ready Modrinth Markdown.
 - `curseforge-description.md` - CurseForge rich-editor copy and asset order.
 - `curseforge-description.html` - paste-ready CurseForge source HTML.
@@ -23,6 +24,10 @@ It does not contain mod source code, Gradle files, jars, logs, private wiki note
 GitHub Pages:
 
 `https://lordbanana89.github.io/flash-replay-page/`
+
+Wiki:
+
+`https://lordbanana89.github.io/flash-replay-page/wiki/`
 
 Hosted asset base:
 

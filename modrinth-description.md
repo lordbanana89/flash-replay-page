@@ -150,6 +150,7 @@ Flash Replay grows in stages. These are community download milestones, not fixed
 
 - [Download on Modrinth](https://modrinth.com/mod/flash-replay)
 - [Open the CurseForge page](https://www.curseforge.com/minecraft/mc-mods/flash-replay)
+- [Read the complete Flash Replay wiki](https://lordbanana89.github.io/flash-replay-page/wiki/)
 
 Flash Replay is a **free download** built by Lordbanana. If it saves a clip, share the result so other creators can find the mod.
 
